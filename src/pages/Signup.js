@@ -110,10 +110,10 @@ const styles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    background: 'linear-gradient(135deg, #1a1a2e 0%, #16213e 100%)',
+    background: '#fce8fa',
   },
   card: {
-    background: '#fff',
+    background: '#f0f2f2',
     padding: 40,
     borderRadius: 12,
     boxShadow: '0 8px 32px rgba(0,0,0,0.3)',

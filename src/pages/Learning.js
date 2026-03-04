@@ -86,8 +86,8 @@ export function Learning() {
   const videoId = selectedLesson ? (selectedLesson.videoId || getVideoId(selectedLesson.youtubeUrl)) : null;
   const isCompleted = progress?.completedLessons?.includes(selectedLesson?.id);
 
-  if (loading) return <div style={{ padding: 40, textAlign: 'center' }}>Loading...</div>;
-  if (error) return <div style={{ padding: 40 }}>{error}</div>;
+  if (loading) return <div style={{ padding: 40, textAlign: 'center', minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>Loading...</div>;
+  if (error) return <div style={{ padding: 40, minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>{error}</div>;
 
   return (
     <div style={styles.layout}>
@@ -179,7 +179,7 @@ export function Learning() {
 }
 
 const styles = {
-  layout: { display: 'flex', minHeight: 'calc(100vh - 52px)', background: '#f5f5f5' },
+  layout: { display: 'flex', minHeight: 'calc(100vh - 52px)', background: '#fce8fa' },
   sidebar: {
     width: 320,
     background: '#fff',

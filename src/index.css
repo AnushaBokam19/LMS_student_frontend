@@ -1,0 +1,21 @@
+/* Global fonts: serif for headings and nav, cursive for everything else */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: cursive;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: serif;
+}
+
+/* Nav bar and nav items */
+.app-nav,
+.app-nav a,
+.app-nav button,
+.app-nav span {
+  font-family: serif !important;
+}

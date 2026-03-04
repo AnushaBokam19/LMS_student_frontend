@@ -54,8 +54,8 @@ export function CourseDetails() {
 
   const goToLearning = () => navigate(`/learn/${courseId}`);
 
-  if (loading) return <div style={{ padding: 40, textAlign: 'center' }}>Loading...</div>;
-  if (error || !course) return <div style={{ padding: 40 }}>{error || 'Course not found'}</div>;
+  if (loading) return <div style={{ padding: 40, textAlign: 'center', minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>Loading...</div>;
+  if (error || !course) return <div style={{ padding: 40, minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>{error || 'Course not found'}</div>;
 
   const isEnrolled = progress !== null;
   const totalLessons = course.totalLessons || 0;
@@ -102,7 +102,13 @@ export function CourseDetails() {
 }
 
 const styles = {
-  page: { padding: 24, maxWidth: 900, margin: '0 auto' },
+  page: {
+    padding: 24,
+    maxWidth: 900,
+    margin: '0 auto',
+    minHeight: 'calc(100vh - 52px)',
+    background: '#fce8fa',
+  },
   header: { display: 'flex', gap: 24, marginBottom: 32, flexWrap: 'wrap' },
   thumb: { width: 320, height: 180, objectFit: 'cover', borderRadius: 12 },
   headerText: { flex: 1, minWidth: 200 },

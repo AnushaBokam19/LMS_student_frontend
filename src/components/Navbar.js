@@ -13,6 +13,7 @@ export function Navbar() {
 
   return (
     <nav
+      className="app-nav"
       style={{
         display: 'flex',
         alignItems: 'center',

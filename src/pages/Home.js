@@ -34,8 +34,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     padding: 24,
-    background: 'linear-gradient(135deg, #16213e 0%, #1a1a2e 100%)',
-    color: '#eee',
+    background: '#fce8fa',
+    color: '#333',
   },
   title: { marginBottom: 12, fontSize: 32 },
   subtitle: { marginBottom: 32, opacity: 0.9 },
@@ -51,9 +51,9 @@ const styles = {
   buttonSecondary: {
     padding: '14px 28px',
     background: 'transparent',
-    color: '#fff',
+    color: '#1a1a2e',
     textDecoration: 'none',
     borderRadius: 8,
-    border: '2px solid #eee',
+    border: '2px solid #1a1a2e',
   },
 };

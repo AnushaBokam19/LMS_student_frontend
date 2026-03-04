@@ -143,7 +143,13 @@ export function CourseListing() {
 }
 
 const styles = {
-  page: { padding: 24, maxWidth: 1200, margin: '0 auto' },
+  page: {
+    padding: 24,
+    maxWidth: 1200,
+    margin: '0 auto',
+    minHeight: 'calc(100vh - 52px)',
+    background: '#fce8fa',
+  },
   title: { marginBottom: 24, color: '#1a1a2e' },
   filters: { display: 'flex', gap: 12, marginBottom: 24 },
   searchInput: { padding: 10, width: 260, border: '1px solid #ddd', borderRadius: 8 },

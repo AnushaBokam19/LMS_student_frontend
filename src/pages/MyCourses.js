@@ -24,11 +24,11 @@ export function MyCourses() {
     load();
   }, []);
 
-  if (loading) return <div style={{ padding: 40, textAlign: 'center' }}>Loading...</div>;
-  if (error) return <div style={{ padding: 40 }}>{error}</div>;
+  if (loading) return <div style={{ padding: 40, textAlign: 'center', minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>Loading...</div>;
+  if (error) return <div style={{ padding: 40, minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>{error}</div>;
 
   return (
-    <div style={{ padding: 24, maxWidth: 900, margin: '0 auto' }}>
+    <div style={{ padding: 24, maxWidth: 900, margin: '0 auto', minHeight: 'calc(100vh - 52px)', background: '#fce8fa' }}>
       <h1 style={{ marginBottom: 24, color: '#1a1a2e' }}>My Courses</h1>
       <p style={{ color: '#666', marginBottom: 24 }}>
         Go to Courses to enroll. Enrolled courses will appear here and you can open them to learn.
